@@ -1,0 +1,15 @@
+<div class="note-list">
+    <span *ngIf="!notes">Loading notes ...</span>
+
+    <mat-card class="note-item" *ngFor="let note of notes">
+        <mat-card-title class="note-name">{{note.name}}</mat-card-title>
+        <mat-card-content class="note-description">{{note.description}}</mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-mini-fab color="warn" (click)="deleteNote(note)">
+              <mat-icon>delete</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+
+    <span *ngIf="notes && notes.length == 0">Notes was not found, u can create your first note use button '+Add Note'.</span>
+</div>

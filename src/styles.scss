@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.button-area {
+    padding: 10px 15px;
+    background-color: #e4e4e4e4;
+}
+
+.note-list {
+    padding: 10px;
+}
+
+.note-item {
+    margin: 0 5px 10px 5px;
+    height: 200px;
+    width: 280px;
+    float: left;
+}
+
+.note-name {
+    height: 30px;
+}
+
+.note-description {
+    height: 105px;
+}
+
+.note-form {
+    margin-top: 10px;
+}
+
+.note-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.note-full-width {
+    width: 100%;
+}
